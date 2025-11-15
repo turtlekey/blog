@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>股票收益走势图 | After The Gold Rush</title>
+<title>股票 | After The Gold Rush</title>
 
       <link rel="stylesheet" type="text/css" href="/blog/css/color.min.80c706883fb87c86ce238c03bc497eaa271870194dc53cf2054476df6825abf4.css" integrity="sha256-gMcGiD&#43;4fIbOI4wDvEl&#43;qicYcBlNxTzyBUR232glq/Q=" crossorigin="anonymous">
       <link rel="stylesheet" href="/blog/css/main.min.b9c8276f3c5e022493d93e06145d4aeaca5d0066074be3a4118dde0e2fd00a5e.css" integrity="sha256-ucgnbzxeAiST2T4GFF1K6spdAGYHS&#43;OkEY3eDi/QCl4=" crossorigin="anonymous">
@@ -171,6 +171,7 @@
             return `
               <div style="font-weight:bold">${params.name} (${stock.symbol})</div>
               <div>持仓金额: ${stock.capital.toFixed(0)}元</div>
+              <div>持仓占比: ${(stock.capital / data[dataIndex].total_assets * 100).toFixed(2)}%</div>
               <div>收益: ${stock.profit.toFixed(2)}元 (${stock.profit_ratio.toFixed(2)}%)</div>
             `;
           }

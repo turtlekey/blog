@@ -141,6 +141,7 @@
             return `
               <div style="font-weight:bold">${params.name} (${stock.symbol})</div>
               <div>持仓金额: ${stock.capital.toFixed(0)}元</div>
+              <div>持仓占比: ${(stock.capital / data[dataIndex].total_assets * 100).toFixed(2)}%</div>
               <div>收益: ${stock.profit.toFixed(2)}元 (${stock.profit_ratio.toFixed(2)}%)</div>
             `;
           }
