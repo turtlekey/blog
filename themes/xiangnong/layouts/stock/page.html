@@ -118,22 +118,24 @@
         ],
         tooltip: {
           trigger: 'axis',
+          alwaysShowContent: false,
         },
       };
       totalAssetsChart.setOption(totalAssetsChartOption);
     }
 
-    function makeHoldStocksChart(dateIndex) {
-      const stocks = data[dateIndex].stocks.filter(stock => stock.capital > 0);
+    function makeHoldStocksChart(dataIndex) {
+      const stocks = data[dataIndex]?.stocks.filter(stock => stock.capital > 0);
       
       const holdStocksChartOption = {
         title: {
-          text: `持仓分布（${data[dateIndex].date}）`,
+          text: `持仓分布（${data[dataIndex].date}）`,
           textStyle: {
             fontSize: 16,
           },
         },
         tooltip: {
+          alwaysShowContent: false,
           formatter: function(params) {
             const stock = stocks.find(s => s.name === params.name);
             return `
@@ -186,7 +188,7 @@
     makeTotalAssetsChart();
     makeHoldStocksChart(data.length-1);
     updateComment(data[data.length-1].comment);
-    totalAssetsChart.on('updateAxisPointer', function(params) {
+    totalAssetsChart.on('mouseover', 'series', function(params) {
       makeHoldStocksChart(params.dataIndex);
       updateComment(data[params.dataIndex].comment);
     });
