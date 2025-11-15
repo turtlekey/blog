@@ -1,0 +1,1 @@
+(()=>{function e(){document.querySelector("#blog-title").addEventListener("pointerdown",()=>window.location.href="{{ site.BaseURL }}")}document.addEventListener("DOMContentLoaded",function(){e()});})();
