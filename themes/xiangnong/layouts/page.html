@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div class="page-header">
+    <div class="header-top">
+      <h2>{{ .Title }}</h2>
+      <span class="page-author">@{{ site.Params.author }}</span>
+    </div>
+    <div class="header-bottom">
+      <span class="page-date">{{ .Date.Format "2006-01-02" }}</span>
+      <div class="taxonomy">
+        {{ range .Params.categories }}
+          <a href="/categories/{{ . | urlize }}">#{{ . }}</a>
+        {{ end }}
+        {{ range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ $title := .Title }}
+  {{ if eq .Data.Plural "categories" }}
+    {{ $title = "所有分类" }}
+  {{ else if eq .Data.Plural "tags" }}
+    {{ $title = "所有标签" }}
+  {{ end }}
+  <h3 class="taxonomy-title"># {{ $title }}</h3>
+  {{ range .Pages }}
+    <div class="term">
+      <a class="term-title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <span>{{ .Pages.Len }}</span>
+    </div>
+  {{ end }}
+{{ end }}

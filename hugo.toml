@@ -1,0 +1,20 @@
+baseURL = 'https://turtlekey.github.io/blog/'
+languageCode = 'zh-CN'
+title = 'After The Gold Rush'
+theme = 'xiangnong'
+publishDir = 'docs'
+
+[params]
+  subtitle = 'the long horns are gone, and so are the drovers.'
+  favicon = '🥑'
+  author = 'turtlekey'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 2

@@ -1,0 +1,42 @@
+[menus]
+  [[menus.main]]
+    name = '分类'
+    pageRef = '/categories'
+    weight = 25
+
+  [[menus.main]]
+    name = '标签'
+    pageRef = '/tags'
+    weight = 30
+
+  [[menus.main]]
+    name = '股票'
+    pageRef = '/stock'
+    weight = 40
+  
+  [[menus.main]]
+    name = '关于'
+    pageRef = '/about'
+    weight = 50
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
+
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = false
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.delete]
+          enable = true
+        [markup.goldmark.extensions.extras.subscript]
+          enable = true
+    [markup.goldmark.renderer]
+      unsafe = true

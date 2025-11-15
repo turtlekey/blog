@@ -1,0 +1,275 @@
+- date: '2025-11-07'
+  total_assets: 305938.99
+  capital: 178386.0
+  available_money: 127552.99
+  stocks:
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 41249.0
+    profit: -272.41
+    profit_ratio: -0.656
+  - name: 平潭发展
+    symbol: 000592
+    capital: 3560.0
+    profit: 596.84
+    profit_ratio: 20.157
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 20100.0
+    profit: 634.51
+    profit_ratio: 3.262
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 17000.0
+    profit: 1967.02
+    profit_ratio: 13.094
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 14805.0
+    profit: -226.29
+    profit_ratio: -1.506
+  - name: 康平科技
+    symbol: '300907'
+    capital: 39372.0
+    profit: -1557.04
+    profit_ratio: -3.806
+  - name: 哈焊华通
+    symbol: '301137'
+    capital: 42300.0
+    profit: -3703.6
+    profit_ratio: -8.055
+- date: '2025-11-10'
+  total_assets: 308307.8
+  capital: 307545.0
+  available_money: 762.8
+  stocks:
+  - name: 振华股份
+    symbol: '603067'
+    capital: 9540.0
+    profit: -49.66
+    profit_ratio: -0.518
+  - name: 时空科技
+    symbol: '605178'
+    capital: 7420.0
+    profit: -105.16
+    profit_ratio: -1.398
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 37553.0
+    profit: 121.5
+    profit_ratio: 0.325
+  - name: 平潭发展
+    symbol: 000592
+    capital: 5992.0
+    profit: 820.67
+    profit_ratio: 15.881
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 19400.0
+    profit: 119.6
+    profit_ratio: 0.621
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 19582.0
+    profit: 5098.3
+    profit_ratio: 35.229
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 14910.0
+    profit: -121.37
+    profit_ratio: -0.808
+  - name: 康平科技
+    symbol: '300907'
+    capital: 39204.0
+    profit: -1724.94
+    profit_ratio: -4.217
+  - name: 哈焊华通
+    symbol: '301137'
+    capital: 36944.0
+    profit: -4357.23
+    profit_ratio: -10.556
+- date: '2025-11-11'
+  total_assets: 311255.02
+  capital: 310350.0
+  available_money: 905.02
+  stocks:
+  - name: 振华股份
+    symbol: '603067'
+    capital: 45430.0
+    profit: -118.34
+    profit_ratio: -0.26
+  - name: 时空科技
+    symbol: '605178'
+    capital: 0.0
+    profit: -770.76
+    profit_ratio: -10.08
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 36000.0
+    profit: 4386.82
+    profit_ratio: 13.886
+  - name: 平潭发展
+    symbol: 000592
+    capital: 0.0
+    profit: 966.57
+    profit_ratio: 8.599
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 19300.0
+    profit: 19.69
+    profit_ratio: 0.102
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 17658.0
+    profit: 2639.24
+    profit_ratio: 17.585
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 12552.0
+    profit: 660.15
+    profit_ratio: 5.555
+  - name: 康平科技
+    symbol: '300907'
+    capital: 38496.0
+    profit: -2432.52
+    profit_ratio: -5.947
+  - name: 哈焊华通
+    symbol: '301137'
+    capital: 28914.0
+    profit: -2609.29
+    profit_ratio: -8.282
+- date: '2025-11-12'
+  total_assets: 301064.36
+  capital: 300829.0
+  available_money: 234.88
+  stocks:
+  - name: 振华股份
+    symbol: '603067'
+    capital: 0.0
+    profit: -3458.15
+    profit_ratio: -6.381
+  - name: 淳中科技
+    symbol: '603516'
+    capital: 19966.0
+    profit: -33.76
+    profit_ratio: -0.169
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 16448.0
+    profit: -734.42
+    profit_ratio: -4.277
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 18763.0
+    profit: -516.98
+    profit_ratio: -2.683
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 0.0
+    profit: 3679.68
+    profit_ratio: 10.422
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 12132.0
+    profit: 240.42
+    profit_ratio: 2.023
+  - name: 康平科技
+    symbol: '300907'
+    capital: 38520.0
+    profit: -2408.54
+    profit_ratio: -5.888
+  - name: 哈焊华通
+    symbol: '301137'
+    capital: 0.0
+    profit: -4361.21
+    profit_ratio: -10.276
+- date: '2025-11-13'
+  total_assets: 301932.63
+  capital: 301674.0
+  available_money: 258.63
+  stocks:
+  - name: 淳中科技
+    symbol: '603516'
+    capital: 19992.0
+    profit: -7.78
+    profit_ratio: -0.039
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 12318.0
+    profit: -588.54
+    profit_ratio: -4.563
+  - name: 天际股份
+    symbol: 002759
+    capital: 9684.0
+    profit: 571.36
+    profit_ratio: 6.274
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 19051.0
+    profit: -229.16
+    profit_ratio: -1.189
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 11964.0
+    profit: 72.52
+    profit_ratio: 0.61
+  - name: 康平科技
+    symbol: '300907'
+    capital: 41665.0
+    profit: -2414.98
+    profit_ratio: -5.482
+- date: '2025-11-14'
+  total_assets: 304674.85
+  capital: 303813.0
+  available_money: 861.85
+  stocks:
+  - name: 合富中国
+    symbol: '603122'
+    capital: 4760.0
+    profit: 692.75
+    profit_ratio: 17.044
+  - name: 淳中科技
+    symbol: '603516'
+    capital: 19650.0
+    profit: -349.58
+    profit_ratio: -1.749
+  - name: 华盛锂电
+    symbol: '688353'
+    capital: 27840.0
+    profit: 2218.99
+    profit_ratio: 8.666
+  - name: 阿特斯
+    symbol: '688472'
+    capital: 0.0
+    profit: 29.08
+    profit_ratio: -8.984
+  - name: 天际股份
+    symbol: 002759
+    capital: 18176.0
+    profit: 88.9
+    profit_ratio: 0.492
+  - name: 阳光电源
+    symbol: '300274'
+    capital: 18500.0
+    profit: -779.84
+    profit_ratio: -4.047
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 17459.0
+    profit: 155.96
+    profit_ratio: 0.902
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 11752.0
+    profit: -139.35
+    profit_ratio: -1.173
+  - name: 康平科技
+    symbol: '300907'
+    capital: 42458.0
+    profit: -1622.39
+    profit_ratio: -3.683
+  - name: 欢乐家
+    symbol: '300997'
+    capital: 5218.0
+    profit: -193.65
+    profit_ratio: -3.58

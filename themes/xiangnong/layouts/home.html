@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ range site.RegularPages.ByDate.Reverse }}
+    {{ if eq .Section "posts" }}
+      <div class="post">
+        <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+        <a class="post-title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a class="post-category" href="/categories/{{ index .Params.categories 0 }}/">#{{ index .Params.categories 0 }}</a>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,177 @@
+{{ define "main" }}
+  <script src="https://unpkg.com/echarts@6.0.0/dist/echarts.min.js"></script>
+  <div id="trade-history-container" data-trade-history='{{ site.Data.stock.trade_history | jsonify }}'>
+    <div id="total-assets-chart"></div>
+    <div id="hold-stocks-chart"></div>
+  </div>
+  <script type="module">
+    const eleChartContaienr = document.querySelector('#trade-history-container');
+    const eleTotalAssetsChart = document.querySelector('#total-assets-chart');
+    const eleHoldStocksChart = document.querySelector('#hold-stocks-chart');
+    let { width, height } = eleChartContaienr.getBoundingClientRect();
+    height = height / 2;
+    
+    const data = JSON.parse(eleChartContaienr.dataset.tradeHistory);
+    const totalAssetsChart = echarts.init(eleTotalAssetsChart, null, { width, height });
+    const holdStocksChart = echarts.init(eleHoldStocksChart, null, { width, height });
+
+    function makeTotalAssetsChart() {
+      const totalAssetsChartOption = {
+        title: {
+          text: '资产走势',
+          textStyle: {
+            fontSize: 14,
+          }
+        },
+        xAxis: {
+          name: '日期',
+          nameLocation: "end",
+          type: 'category',
+          data: data.map(item => item.date),
+          axisTick: {
+            inside: true,
+            lineStyle: {
+              color: "#3FA2F6",
+            },
+          },
+          nameTextStyle: {
+            fontWeight: "bold",
+            color: "#3FA2F6",
+          },
+          axisLine: {
+            onZero: false,
+            lineStyle: {
+              color: "#3FA2F6",
+            },
+          },
+        },
+        yAxis: [
+          {
+            name: "总资产",
+            type: "value",
+            min: 3 * 10**5,
+            nameTextStyle: {
+              fontWeight: "bold",
+              color: "#A02334",
+              verticalAlign: "top",
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#A02334",
+              },
+            },
+            axisTick: {
+              inside: true,
+              lineStyle: {
+              },
+            },
+            splitLine: {
+              show: false,
+            }
+          },
+          {
+            name: "涨跌幅",
+            type: "value",
+            min: -10,
+            max: 10,
+            nameTextStyle: {
+              fontWeight: "bold",
+              color: "#A02334",
+              verticalAlign: "top",
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#A02334",
+              },
+            },
+          },
+        ],
+        series: [
+          {
+            name: '总资产',
+            data: data.map(item => item.total_assets),
+            type: 'line',
+            yAxisIndex: 0,
+          },
+          {
+            name: '涨跌幅',
+            data: data.map((item, index) => index > 0 ? Math.round((data[index].total_assets / data[index-1].total_assets - 1) * 10000, 2) / 100 : 0),
+            type: 'bar',
+            yAxisIndex: 1,
+            itemStyle: {
+              color: function(params) {
+                return params.value >= 0 ? 'red' : 'green'; 
+              }
+            }
+          },
+        ],
+        tooltip: {
+          trigger: 'axis',
+        },
+      };
+      totalAssetsChart.setOption(totalAssetsChartOption);
+    }
+
+    function makeHoldStocksChart(dateIndex) {
+      const stocks = data[dateIndex].stocks.filter(stock => stock.capital > 0);
+      
+      const holdStocksChartOption = {
+        title: {
+          text: `${data[dateIndex].date} 持仓分布`,
+          textStyle: {
+            fontSize: 14,
+          },
+        },
+        tooltip: {
+          formatter: function(params) {
+            const stock = stocks.find(s => s.name === params.name);
+            return `
+              <div style="font-weight:bold">${params.name} (${stock.symbol})</div>
+              <div>持仓金额: ${stock.capital.toFixed(0)}元</div>
+              <div>收益: ${stock.profit.toFixed(2)}元 (${stock.profit_ratio.toFixed(2)}%)</div>
+            `;
+          }
+        },
+        series: [
+          {
+            name: '持仓金额',
+            type: 'pie',
+            radius: ['30%', '60%'],
+            itemStyle: {
+              borderRadius: 4,
+              borderColor: '#fff',
+              borderWidth: 1
+            },
+            label: {
+              show: true,
+              position: 'outer'
+            },
+            labelLine: {
+              show: true,
+            },
+            data: stocks.map(stock => ({
+              name: stock.name,
+              value: stock.capital,
+              itemStyle: {
+                color: stock.profit <= 0 ? '#2ecc71' : '#e74c3c'
+              }
+            }))
+          }
+        ]
+      };
+      holdStocksChart.setOption(holdStocksChartOption);
+    }
+
+    makeTotalAssetsChart();
+    makeHoldStocksChart(data.length-1);
+    totalAssetsChart.on('mouseover', 'series', function(params) {
+      makeHoldStocksChart(params.dataIndex);
+    });
+    window.addEventListener('resize', function() {
+      totalAssetsChart.resize();
+      holdStocksChart.resize();
+    });
+  </script>
+{{ end }}

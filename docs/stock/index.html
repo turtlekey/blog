@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>股票收益走势图 | After The Gold Rush</title>
+
+      <link rel="stylesheet" type="text/css" href="/blog/css/color.min.80c706883fb87c86ce238c03bc497eaa271870194dc53cf2054476df6825abf4.css" integrity="sha256-gMcGiD&#43;4fIbOI4wDvEl&#43;qicYcBlNxTzyBUR232glq/Q=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/blog/css/main.min.6213a548b4395dfa564c95ed5a944775f2cdb664deca55755b17eec3a0b42044.css" integrity="sha256-YhOlSLQ5XfpWTJXtWpRHdfLNtmTeylV1Wxfuw6C0IEQ=" crossorigin="anonymous">
+
+
+        <script src="/blog/js/main.fcc1538d8bb8b6527fc8f6d4f7f38930c29c5413a8b209cb0954209549ad8a61.js" integrity="sha256-/MFTjYu4tlJ/yPbU9/OJMMKcVBOosgnLCVQglUmtimE=" crossorigin="anonymous"></script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a5%91</text></svg>">
+</head>
+<body>
+  <div id="content-container">
+    <header>
+      <h1 id="blog-title">After The Gold Rush</h1>
+<h4 id="blog-subtitle">the long horns are gone, and so are the drovers.</h3>
+
+  <nav>
+    <a href="/blog/categories/">分类</a>
+    <a href="/blog/tags/">标签</a>
+    <a aria-current="page" class="active" href="/blog/stock/">股票</a>
+    <a href="/blog/about/">关于</a>
+  </nav>
+
+    </header>
+    <main>
+      
+  <script src="https://unpkg.com/echarts@6.0.0/dist/echarts.min.js"></script>
+  <div id="trade-history-container" data-trade-history='[{&#34;available_money&#34;:127552.99,&#34;capital&#34;:178386,&#34;date&#34;:&#34;2025-11-07&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:41249,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-272.41,&#34;profit_ratio&#34;:-0.656,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:3560,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:596.84,&#34;profit_ratio&#34;:20.157,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:20100,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:634.51,&#34;profit_ratio&#34;:3.262,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17000,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:1967.02,&#34;profit_ratio&#34;:13.094,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:14805,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-226.29,&#34;profit_ratio&#34;:-1.506,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:39372,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1557.04,&#34;profit_ratio&#34;:-3.806,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:42300,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-3703.6,&#34;profit_ratio&#34;:-8.055,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:305938.99},{&#34;available_money&#34;:762.8,&#34;capital&#34;:307545,&#34;date&#34;:&#34;2025-11-10&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:9540,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-49.66,&#34;profit_ratio&#34;:-0.518,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:7420,&#34;name&#34;:&#34;时空科技&#34;,&#34;profit&#34;:-105.16,&#34;profit_ratio&#34;:-1.398,&#34;symbol&#34;:&#34;605178&#34;},{&#34;capital&#34;:37553,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:121.5,&#34;profit_ratio&#34;:0.325,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:5992,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:820.67,&#34;profit_ratio&#34;:15.881,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:19400,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:119.6,&#34;profit_ratio&#34;:0.621,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:19582,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:5098.3,&#34;profit_ratio&#34;:35.229,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:14910,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-121.37,&#34;profit_ratio&#34;:-0.808,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:39204,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1724.94,&#34;profit_ratio&#34;:-4.217,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:36944,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-4357.23,&#34;profit_ratio&#34;:-10.556,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:308307.8},{&#34;available_money&#34;:905.02,&#34;capital&#34;:310350,&#34;date&#34;:&#34;2025-11-11&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:45430,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-118.34,&#34;profit_ratio&#34;:-0.26,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;时空科技&#34;,&#34;profit&#34;:-770.76,&#34;profit_ratio&#34;:-10.08,&#34;symbol&#34;:&#34;605178&#34;},{&#34;capital&#34;:36000,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:4386.82,&#34;profit_ratio&#34;:13.886,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:966.57,&#34;profit_ratio&#34;:8.599,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:19300,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:19.69,&#34;profit_ratio&#34;:0.102,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17658,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:2639.24,&#34;profit_ratio&#34;:17.585,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:12552,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:660.15,&#34;profit_ratio&#34;:5.555,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:38496,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2432.52,&#34;profit_ratio&#34;:-5.947,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:28914,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-2609.29,&#34;profit_ratio&#34;:-8.282,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:311255.02},{&#34;available_money&#34;:234.88,&#34;capital&#34;:300829,&#34;date&#34;:&#34;2025-11-12&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:0,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-3458.15,&#34;profit_ratio&#34;:-6.381,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:19966,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-33.76,&#34;profit_ratio&#34;:-0.169,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:16448,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-734.42,&#34;profit_ratio&#34;:-4.277,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:18763,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-516.98,&#34;profit_ratio&#34;:-2.683,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:3679.68,&#34;profit_ratio&#34;:10.422,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:12132,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:240.42,&#34;profit_ratio&#34;:2.023,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:38520,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2408.54,&#34;profit_ratio&#34;:-5.888,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-4361.21,&#34;profit_ratio&#34;:-10.276,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:301064.36},{&#34;available_money&#34;:258.63,&#34;capital&#34;:301674,&#34;date&#34;:&#34;2025-11-13&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:19992,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-7.78,&#34;profit_ratio&#34;:-0.039,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:12318,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-588.54,&#34;profit_ratio&#34;:-4.563,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:9684,&#34;name&#34;:&#34;天际股份&#34;,&#34;profit&#34;:571.36,&#34;profit_ratio&#34;:6.274,&#34;symbol&#34;:&#34;002759&#34;},{&#34;capital&#34;:19051,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-229.16,&#34;profit_ratio&#34;:-1.189,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:11964,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:72.52,&#34;profit_ratio&#34;:0.61,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:41665,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2414.98,&#34;profit_ratio&#34;:-5.482,&#34;symbol&#34;:&#34;300907&#34;}],&#34;total_assets&#34;:301932.63},{&#34;available_money&#34;:861.85,&#34;capital&#34;:303813,&#34;date&#34;:&#34;2025-11-14&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:4760,&#34;name&#34;:&#34;合富中国&#34;,&#34;profit&#34;:692.75,&#34;profit_ratio&#34;:17.044,&#34;symbol&#34;:&#34;603122&#34;},{&#34;capital&#34;:19650,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-349.58,&#34;profit_ratio&#34;:-1.749,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:27840,&#34;name&#34;:&#34;华盛锂电&#34;,&#34;profit&#34;:2218.99,&#34;profit_ratio&#34;:8.666,&#34;symbol&#34;:&#34;688353&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:29.08,&#34;profit_ratio&#34;:-8.984,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:18176,&#34;name&#34;:&#34;天际股份&#34;,&#34;profit&#34;:88.9,&#34;profit_ratio&#34;:0.492,&#34;symbol&#34;:&#34;002759&#34;},{&#34;capital&#34;:18500,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-779.84,&#34;profit_ratio&#34;:-4.047,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17459,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:155.96,&#34;profit_ratio&#34;:0.902,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:11752,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-139.35,&#34;profit_ratio&#34;:-1.173,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:42458,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1622.39,&#34;profit_ratio&#34;:-3.683,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:5218,&#34;name&#34;:&#34;欢乐家&#34;,&#34;profit&#34;:-193.65,&#34;profit_ratio&#34;:-3.58,&#34;symbol&#34;:&#34;300997&#34;}],&#34;total_assets&#34;:304674.85}]'>
+    <div id="total-assets-chart"></div>
+    <div id="hold-stocks-chart"></div>
+  </div>
+  <script type="module">
+    const eleChartContaienr = document.querySelector('#trade-history-container');
+    const eleTotalAssetsChart = document.querySelector('#total-assets-chart');
+    const eleHoldStocksChart = document.querySelector('#hold-stocks-chart');
+    let { width, height } = eleChartContaienr.getBoundingClientRect();
+    height = height / 2;
+    
+    const data = JSON.parse(eleChartContaienr.dataset.tradeHistory);
+    const totalAssetsChart = echarts.init(eleTotalAssetsChart, null, { width, height });
+    const holdStocksChart = echarts.init(eleHoldStocksChart, null, { width, height });
+
+    function makeTotalAssetsChart() {
+      const totalAssetsChartOption = {
+        title: {
+          text: '资产走势',
+          textStyle: {
+            fontSize: 14,
+          }
+        },
+        xAxis: {
+          name: '日期',
+          nameLocation: "end",
+          type: 'category',
+          data: data.map(item => item.date),
+          axisTick: {
+            inside: true,
+            lineStyle: {
+              color: "#3FA2F6",
+            },
+          },
+          nameTextStyle: {
+            fontWeight: "bold",
+            color: "#3FA2F6",
+          },
+          axisLine: {
+            onZero: false,
+            lineStyle: {
+              color: "#3FA2F6",
+            },
+          },
+        },
+        yAxis: [
+          {
+            name: "总资产",
+            type: "value",
+            min: 3 * 10**5,
+            nameTextStyle: {
+              fontWeight: "bold",
+              color: "#A02334",
+              verticalAlign: "top",
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#A02334",
+              },
+            },
+            axisTick: {
+              inside: true,
+              lineStyle: {
+              },
+            },
+            splitLine: {
+              show: false,
+            }
+          },
+          {
+            name: "涨跌幅",
+            type: "value",
+            min: -10,
+            max: 10,
+            nameTextStyle: {
+              fontWeight: "bold",
+              color: "#A02334",
+              verticalAlign: "top",
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#A02334",
+              },
+            },
+          },
+        ],
+        series: [
+          {
+            name: '总资产',
+            data: data.map(item => item.total_assets),
+            type: 'line',
+            yAxisIndex: 0,
+          },
+          {
+            name: '涨跌幅',
+            data: data.map((item, index) => index > 0 ? Math.round((data[index].total_assets / data[index-1].total_assets - 1) * 10000, 2) / 100 : 0),
+            type: 'bar',
+            yAxisIndex: 1,
+            itemStyle: {
+              color: function(params) {
+                return params.value >= 0 ? 'red' : 'green'; 
+              }
+            }
+          },
+        ],
+        tooltip: {
+          trigger: 'axis',
+        },
+      };
+      totalAssetsChart.setOption(totalAssetsChartOption);
+    }
+
+    function makeHoldStocksChart(dateIndex) {
+      const stocks = data[dateIndex].stocks.filter(stock => stock.capital > 0);
+      
+      const holdStocksChartOption = {
+        title: {
+          text: `${data[dateIndex].date} 持仓分布`,
+          textStyle: {
+            fontSize: 14,
+          },
+        },
+        tooltip: {
+          formatter: function(params) {
+            const stock = stocks.find(s => s.name === params.name);
+            return `
+              <div style="font-weight:bold">${params.name} (${stock.symbol})</div>
+              <div>持仓金额: ${stock.capital.toFixed(0)}元</div>
+              <div>收益: ${stock.profit.toFixed(2)}元 (${stock.profit_ratio.toFixed(2)}%)</div>
+            `;
+          }
+        },
+        series: [
+          {
+            name: '持仓金额',
+            type: 'pie',
+            radius: ['30%', '60%'],
+            itemStyle: {
+              borderRadius: 4,
+              borderColor: '#fff',
+              borderWidth: 1
+            },
+            label: {
+              show: true,
+              position: 'outer'
+            },
+            labelLine: {
+              show: true,
+            },
+            data: stocks.map(stock => ({
+              name: stock.name,
+              value: stock.capital,
+              itemStyle: {
+                color: stock.profit <= 0 ? '#2ecc71' : '#e74c3c'
+              }
+            }))
+          }
+        ]
+      };
+      holdStocksChart.setOption(holdStocksChartOption);
+    }
+
+    makeTotalAssetsChart();
+    makeHoldStocksChart(data.length-1);
+    totalAssetsChart.on('mouseover', 'series', function(params) {
+      makeHoldStocksChart(params.dataIndex);
+    });
+    window.addEventListener('resize', function() {
+      totalAssetsChart.resize();
+      holdStocksChart.resize();
+    });
+  </script>
+
+    </main>
+    <footer>
+      <p>Copyright© 2025. All rights reserved.</p>
+
+    </footer>
+  </div>
+</body>
+</html>

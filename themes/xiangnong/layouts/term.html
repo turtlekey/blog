@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h3 class="term-title"># {{ .Title }}</h3>
+  {{ .Content }}
+  {{ range .Pages }}
+    <div class="post">
+      <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+      <a class="post-title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </div>
+  {{ end }}
+{{ end }}
