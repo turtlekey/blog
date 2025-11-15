@@ -6,7 +6,7 @@
 <title>股票收益走势图 | After The Gold Rush</title>
 
       <link rel="stylesheet" type="text/css" href="/blog/css/color.min.80c706883fb87c86ce238c03bc497eaa271870194dc53cf2054476df6825abf4.css" integrity="sha256-gMcGiD&#43;4fIbOI4wDvEl&#43;qicYcBlNxTzyBUR232glq/Q=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/blog/css/main.min.6213a548b4395dfa564c95ed5a944775f2cdb664deca55755b17eec3a0b42044.css" integrity="sha256-YhOlSLQ5XfpWTJXtWpRHdfLNtmTeylV1Wxfuw6C0IEQ=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/blog/css/main.min.b9c8276f3c5e022493d93e06145d4aeaca5d0066074be3a4118dde0e2fd00a5e.css" integrity="sha256-ucgnbzxeAiST2T4GFF1K6spdAGYHS&#43;OkEY3eDi/QCl4=" crossorigin="anonymous">
 
 
         <script src="/blog/js/main.fcc1538d8bb8b6527fc8f6d4f7f38930c29c5413a8b209cb0954209549ad8a61.js" integrity="sha256-/MFTjYu4tlJ/yPbU9/OJMMKcVBOosgnLCVQglUmtimE=" crossorigin="anonymous"></script>
@@ -30,18 +30,26 @@
     <main>
       
   <script src="https://unpkg.com/echarts@6.0.0/dist/echarts.min.js"></script>
-  <div id="trade-history-container" data-trade-history='[{&#34;available_money&#34;:127552.99,&#34;capital&#34;:178386,&#34;date&#34;:&#34;2025-11-07&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:41249,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-272.41,&#34;profit_ratio&#34;:-0.656,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:3560,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:596.84,&#34;profit_ratio&#34;:20.157,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:20100,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:634.51,&#34;profit_ratio&#34;:3.262,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17000,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:1967.02,&#34;profit_ratio&#34;:13.094,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:14805,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-226.29,&#34;profit_ratio&#34;:-1.506,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:39372,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1557.04,&#34;profit_ratio&#34;:-3.806,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:42300,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-3703.6,&#34;profit_ratio&#34;:-8.055,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:305938.99},{&#34;available_money&#34;:762.8,&#34;capital&#34;:307545,&#34;date&#34;:&#34;2025-11-10&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:9540,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-49.66,&#34;profit_ratio&#34;:-0.518,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:7420,&#34;name&#34;:&#34;时空科技&#34;,&#34;profit&#34;:-105.16,&#34;profit_ratio&#34;:-1.398,&#34;symbol&#34;:&#34;605178&#34;},{&#34;capital&#34;:37553,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:121.5,&#34;profit_ratio&#34;:0.325,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:5992,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:820.67,&#34;profit_ratio&#34;:15.881,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:19400,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:119.6,&#34;profit_ratio&#34;:0.621,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:19582,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:5098.3,&#34;profit_ratio&#34;:35.229,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:14910,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-121.37,&#34;profit_ratio&#34;:-0.808,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:39204,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1724.94,&#34;profit_ratio&#34;:-4.217,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:36944,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-4357.23,&#34;profit_ratio&#34;:-10.556,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:308307.8},{&#34;available_money&#34;:905.02,&#34;capital&#34;:310350,&#34;date&#34;:&#34;2025-11-11&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:45430,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-118.34,&#34;profit_ratio&#34;:-0.26,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;时空科技&#34;,&#34;profit&#34;:-770.76,&#34;profit_ratio&#34;:-10.08,&#34;symbol&#34;:&#34;605178&#34;},{&#34;capital&#34;:36000,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:4386.82,&#34;profit_ratio&#34;:13.886,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;平潭发展&#34;,&#34;profit&#34;:966.57,&#34;profit_ratio&#34;:8.599,&#34;symbol&#34;:&#34;000592&#34;},{&#34;capital&#34;:19300,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:19.69,&#34;profit_ratio&#34;:0.102,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17658,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:2639.24,&#34;profit_ratio&#34;:17.585,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:12552,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:660.15,&#34;profit_ratio&#34;:5.555,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:38496,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2432.52,&#34;profit_ratio&#34;:-5.947,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:28914,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-2609.29,&#34;profit_ratio&#34;:-8.282,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:311255.02},{&#34;available_money&#34;:234.88,&#34;capital&#34;:300829,&#34;date&#34;:&#34;2025-11-12&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:0,&#34;name&#34;:&#34;振华股份&#34;,&#34;profit&#34;:-3458.15,&#34;profit_ratio&#34;:-6.381,&#34;symbol&#34;:&#34;603067&#34;},{&#34;capital&#34;:19966,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-33.76,&#34;profit_ratio&#34;:-0.169,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:16448,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-734.42,&#34;profit_ratio&#34;:-4.277,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:18763,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-516.98,&#34;profit_ratio&#34;:-2.683,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:3679.68,&#34;profit_ratio&#34;:10.422,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:12132,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:240.42,&#34;profit_ratio&#34;:2.023,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:38520,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2408.54,&#34;profit_ratio&#34;:-5.888,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;哈焊华通&#34;,&#34;profit&#34;:-4361.21,&#34;profit_ratio&#34;:-10.276,&#34;symbol&#34;:&#34;301137&#34;}],&#34;total_assets&#34;:301064.36},{&#34;available_money&#34;:258.63,&#34;capital&#34;:301674,&#34;date&#34;:&#34;2025-11-13&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:19992,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-7.78,&#34;profit_ratio&#34;:-0.039,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:12318,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:-588.54,&#34;profit_ratio&#34;:-4.563,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:9684,&#34;name&#34;:&#34;天际股份&#34;,&#34;profit&#34;:571.36,&#34;profit_ratio&#34;:6.274,&#34;symbol&#34;:&#34;002759&#34;},{&#34;capital&#34;:19051,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-229.16,&#34;profit_ratio&#34;:-1.189,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:11964,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:72.52,&#34;profit_ratio&#34;:0.61,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:41665,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-2414.98,&#34;profit_ratio&#34;:-5.482,&#34;symbol&#34;:&#34;300907&#34;}],&#34;total_assets&#34;:301932.63},{&#34;available_money&#34;:861.85,&#34;capital&#34;:303813,&#34;date&#34;:&#34;2025-11-14&#34;,&#34;stocks&#34;:[{&#34;capital&#34;:4760,&#34;name&#34;:&#34;合富中国&#34;,&#34;profit&#34;:692.75,&#34;profit_ratio&#34;:17.044,&#34;symbol&#34;:&#34;603122&#34;},{&#34;capital&#34;:19650,&#34;name&#34;:&#34;淳中科技&#34;,&#34;profit&#34;:-349.58,&#34;profit_ratio&#34;:-1.749,&#34;symbol&#34;:&#34;603516&#34;},{&#34;capital&#34;:27840,&#34;name&#34;:&#34;华盛锂电&#34;,&#34;profit&#34;:2218.99,&#34;profit_ratio&#34;:8.666,&#34;symbol&#34;:&#34;688353&#34;},{&#34;capital&#34;:0,&#34;name&#34;:&#34;阿特斯&#34;,&#34;profit&#34;:29.08,&#34;profit_ratio&#34;:-8.984,&#34;symbol&#34;:&#34;688472&#34;},{&#34;capital&#34;:18176,&#34;name&#34;:&#34;天际股份&#34;,&#34;profit&#34;:88.9,&#34;profit_ratio&#34;:0.492,&#34;symbol&#34;:&#34;002759&#34;},{&#34;capital&#34;:18500,&#34;name&#34;:&#34;阳光电源&#34;,&#34;profit&#34;:-779.84,&#34;profit_ratio&#34;:-4.047,&#34;symbol&#34;:&#34;300274&#34;},{&#34;capital&#34;:17459,&#34;name&#34;:&#34;香农芯创&#34;,&#34;profit&#34;:155.96,&#34;profit_ratio&#34;:0.902,&#34;symbol&#34;:&#34;300475&#34;},{&#34;capital&#34;:11752,&#34;name&#34;:&#34;英搏尔&#34;,&#34;profit&#34;:-139.35,&#34;profit_ratio&#34;:-1.173,&#34;symbol&#34;:&#34;300681&#34;},{&#34;capital&#34;:42458,&#34;name&#34;:&#34;康平科技&#34;,&#34;profit&#34;:-1622.39,&#34;profit_ratio&#34;:-3.683,&#34;symbol&#34;:&#34;300907&#34;},{&#34;capital&#34;:5218,&#34;name&#34;:&#34;欢乐家&#34;,&#34;profit&#34;:-193.65,&#34;profit_ratio&#34;:-3.58,&#34;symbol&#34;:&#34;300997&#34;}],&#34;total_assets&#34;:304674.85}]'>
+  <div id="trade-history-container">
     <div id="total-assets-chart"></div>
     <div id="hold-stocks-chart"></div>
+    <div id="comment">
+    </div>
   </div>
-  <script type="module">
+  <script>
+    const color = {
+      red: '#e74c3c',
+      green: '#2ecc71',
+      purple: '#b48ead',
+    };
     const eleChartContaienr = document.querySelector('#trade-history-container');
     const eleTotalAssetsChart = document.querySelector('#total-assets-chart');
     const eleHoldStocksChart = document.querySelector('#hold-stocks-chart');
+    const eleComment = document.querySelector('#comment');
     let { width, height } = eleChartContaienr.getBoundingClientRect();
     height = height / 2;
     
-    const data = JSON.parse(eleChartContaienr.dataset.tradeHistory);
+    const data = JSON.parse("[{\"available_money\":127552.99,\"capital\":178386,\"comment\":[\"1. AI电力有几个主板票走得很强势，振华、海天、摩恩、京泉华，但是它们目前还处于PK阶段，看不出谁是主板核心，所以这里需要再等一等。而两创这边，只有唯二的阿特斯和中能电气，一个容量，一个弹性，一个是节点票，一个是阶段强度。我选择了阿特斯，主要还是因为节点。\",\"2. 香农这边最后一点仓位，练一练定力。\"],\"date\":\"2025-11-07\",\"stocks\":[{\"capital\":41249,\"name\":\"阿特斯\",\"profit\":-272.41,\"profit_ratio\":-0.656,\"symbol\":\"688472\"},{\"capital\":3560,\"name\":\"平潭发展\",\"profit\":596.84,\"profit_ratio\":20.157,\"symbol\":\"000592\"},{\"capital\":20100,\"name\":\"阳光电源\",\"profit\":634.51,\"profit_ratio\":3.262,\"symbol\":\"300274\"},{\"capital\":17000,\"name\":\"香农芯创\",\"profit\":1967.02,\"profit_ratio\":13.094,\"symbol\":\"300475\"},{\"capital\":14805,\"name\":\"英搏尔\",\"profit\":-226.29,\"profit_ratio\":-1.506,\"symbol\":\"300681\"},{\"capital\":39372,\"name\":\"康平科技\",\"profit\":-1557.04,\"profit_ratio\":-3.806,\"symbol\":\"300907\"},{\"capital\":42300,\"name\":\"哈焊华通\",\"profit\":-3703.6,\"profit_ratio\":-8.055,\"symbol\":\"301137\"}],\"total_assets\":305938.99},{\"available_money\":762.8,\"capital\":307545,\"comment\":[\"1. 没想到容量阿特斯的走位如此蛇皮，直接导致一顿乱T，新开了一点涨价概念的振华。\",\"2. 时空这里有点取代德明利的意思，小买一点。\"],\"date\":\"2025-11-10\",\"stocks\":[{\"capital\":9540,\"name\":\"振华股份\",\"profit\":-49.66,\"profit_ratio\":-0.518,\"symbol\":\"603067\"},{\"capital\":7420,\"name\":\"时空科技\",\"profit\":-105.16,\"profit_ratio\":-1.398,\"symbol\":\"605178\"},{\"capital\":37553,\"name\":\"阿特斯\",\"profit\":121.5,\"profit_ratio\":0.325,\"symbol\":\"688472\"},{\"capital\":5992,\"name\":\"平潭发展\",\"profit\":820.67,\"profit_ratio\":15.881,\"symbol\":\"000592\"},{\"capital\":19400,\"name\":\"阳光电源\",\"profit\":119.6,\"profit_ratio\":0.621,\"symbol\":\"300274\"},{\"capital\":19582,\"name\":\"香农芯创\",\"profit\":5098.3,\"profit_ratio\":35.229,\"symbol\":\"300475\"},{\"capital\":14910,\"name\":\"英搏尔\",\"profit\":-121.37,\"profit_ratio\":-0.808,\"symbol\":\"300681\"},{\"capital\":39204,\"name\":\"康平科技\",\"profit\":-1724.94,\"profit_ratio\":-4.217,\"symbol\":\"300907\"},{\"capital\":36944,\"name\":\"哈焊华通\",\"profit\":-4357.23,\"profit_ratio\":-10.556,\"symbol\":\"301137\"}],\"total_assets\":308307.8},{\"available_money\":905.02,\"capital\":310350,\"comment\":[\"1. 储能集体竞价爆量高开，于是提高了阿特斯和振华的预期，阿特斯竞价加仓，振华拉升途中加了一笔，没想到整个板块高开低走，好在阿特斯扛到了分时高点T出，振华低吸加仓。\"],\"date\":\"2025-11-11\",\"stocks\":[{\"capital\":45430,\"name\":\"振华股份\",\"profit\":-118.34,\"profit_ratio\":-0.26,\"symbol\":\"603067\"},{\"capital\":0,\"name\":\"时空科技\",\"profit\":-770.76,\"profit_ratio\":-10.08,\"symbol\":\"605178\"},{\"capital\":36000,\"name\":\"阿特斯\",\"profit\":4386.82,\"profit_ratio\":13.886,\"symbol\":\"688472\"},{\"capital\":0,\"name\":\"平潭发展\",\"profit\":966.57,\"profit_ratio\":8.599,\"symbol\":\"000592\"},{\"capital\":19300,\"name\":\"阳光电源\",\"profit\":19.69,\"profit_ratio\":0.102,\"symbol\":\"300274\"},{\"capital\":17658,\"name\":\"香农芯创\",\"profit\":2639.24,\"profit_ratio\":17.585,\"symbol\":\"300475\"},{\"capital\":12552,\"name\":\"英搏尔\",\"profit\":660.15,\"profit_ratio\":5.555,\"symbol\":\"300681\"},{\"capital\":38496,\"name\":\"康平科技\",\"profit\":-2432.52,\"profit_ratio\":-5.947,\"symbol\":\"300907\"},{\"capital\":28914,\"name\":\"哈焊华通\",\"profit\":-2609.29,\"profit_ratio\":-8.282,\"symbol\":\"301137\"}],\"total_assets\":311255.02},{\"available_money\":234.88,\"capital\":300829,\"comment\":[\"1. 阿特斯和振华双双大幅低开，相信节点，所以在竞价加仓一笔阿特斯，没想到小作文力道太大，两个票今天大幅亏损。振华已被摩恩淘汰，因此割肉出局，阿特斯留下底仓再等等。\",\"2. 新开仓科技周期大龙淳中。\"],\"date\":\"2025-11-12\",\"stocks\":[{\"capital\":0,\"name\":\"振华股份\",\"profit\":-3458.15,\"profit_ratio\":-6.381,\"symbol\":\"603067\"},{\"capital\":19966,\"name\":\"淳中科技\",\"profit\":-33.76,\"profit_ratio\":-0.169,\"symbol\":\"603516\"},{\"capital\":16448,\"name\":\"阿特斯\",\"profit\":-734.42,\"profit_ratio\":-4.277,\"symbol\":\"688472\"},{\"capital\":18763,\"name\":\"阳光电源\",\"profit\":-516.98,\"profit_ratio\":-2.683,\"symbol\":\"300274\"},{\"capital\":0,\"name\":\"香农芯创\",\"profit\":3679.68,\"profit_ratio\":10.422,\"symbol\":\"300475\"},{\"capital\":12132,\"name\":\"英搏尔\",\"profit\":240.42,\"profit_ratio\":2.023,\"symbol\":\"300681\"},{\"capital\":38520,\"name\":\"康平科技\",\"profit\":-2408.54,\"profit_ratio\":-5.888,\"symbol\":\"300907\"},{\"capital\":0,\"name\":\"哈焊华通\",\"profit\":-4361.21,\"profit_ratio\":-10.276,\"symbol\":\"301137\"}],\"total_assets\":301064.36},{\"available_money\":258.63,\"capital\":301674,\"comment\":[\"1. 严重踏空这波锂电行情，还好天际股份给了机会，买了一点点。\"],\"date\":\"2025-11-13\",\"stocks\":[{\"capital\":19992,\"name\":\"淳中科技\",\"profit\":-7.78,\"profit_ratio\":-0.039,\"symbol\":\"603516\"},{\"capital\":12318,\"name\":\"阿特斯\",\"profit\":-588.54,\"profit_ratio\":-4.563,\"symbol\":\"688472\"},{\"capital\":9684,\"name\":\"天际股份\",\"profit\":571.36,\"profit_ratio\":6.274,\"symbol\":\"002759\"},{\"capital\":19051,\"name\":\"阳光电源\",\"profit\":-229.16,\"profit_ratio\":-1.189,\"symbol\":\"300274\"},{\"capital\":11964,\"name\":\"英搏尔\",\"profit\":72.52,\"profit_ratio\":0.61,\"symbol\":\"300681\"},{\"capital\":41665,\"name\":\"康平科技\",\"profit\":-2414.98,\"profit_ratio\":-5.482,\"symbol\":\"300907\"}],\"total_assets\":301932.63},{\"available_money\":861.85,\"capital\":303813,\"comment\":[\"1. 全市场最牛逼的几个票都在手上，完满了。\"],\"date\":\"2025-11-14\",\"stocks\":[{\"capital\":4760,\"name\":\"合富中国\",\"profit\":692.75,\"profit_ratio\":17.044,\"symbol\":\"603122\"},{\"capital\":19650,\"name\":\"淳中科技\",\"profit\":-349.58,\"profit_ratio\":-1.749,\"symbol\":\"603516\"},{\"capital\":27840,\"name\":\"华盛锂电\",\"profit\":2218.99,\"profit_ratio\":8.666,\"symbol\":\"688353\"},{\"capital\":0,\"name\":\"阿特斯\",\"profit\":29.08,\"profit_ratio\":-8.984,\"symbol\":\"688472\"},{\"capital\":18176,\"name\":\"天际股份\",\"profit\":88.9,\"profit_ratio\":0.492,\"symbol\":\"002759\"},{\"capital\":18500,\"name\":\"阳光电源\",\"profit\":-779.84,\"profit_ratio\":-4.047,\"symbol\":\"300274\"},{\"capital\":17459,\"name\":\"香农芯创\",\"profit\":155.96,\"profit_ratio\":0.902,\"symbol\":\"300475\"},{\"capital\":11752,\"name\":\"英搏尔\",\"profit\":-139.35,\"profit_ratio\":-1.173,\"symbol\":\"300681\"},{\"capital\":42458,\"name\":\"康平科技\",\"profit\":-1622.39,\"profit_ratio\":-3.683,\"symbol\":\"300907\"},{\"capital\":5218,\"name\":\"欢乐家\",\"profit\":-193.65,\"profit_ratio\":-3.58,\"symbol\":\"300997\"}],\"total_assets\":304674.85}]");
     const totalAssetsChart = echarts.init(eleTotalAssetsChart, null, { width, height });
     const holdStocksChart = echarts.init(eleHoldStocksChart, null, { width, height });
 
@@ -50,51 +58,32 @@
         title: {
           text: '资产走势',
           textStyle: {
-            fontSize: 14,
+            fontSize: 16,
           }
         },
         xAxis: {
           name: '日期',
-          nameLocation: "end",
+          nameLocation: "center",
           type: 'category',
           data: data.map(item => item.date),
-          axisTick: {
-            inside: true,
-            lineStyle: {
-              color: "#3FA2F6",
-            },
+          axisLine: {
+            onZero: false,
           },
           nameTextStyle: {
             fontWeight: "bold",
-            color: "#3FA2F6",
-          },
-          axisLine: {
-            onZero: false,
-            lineStyle: {
-              color: "#3FA2F6",
-            },
-          },
+          }
         },
         yAxis: [
           {
             name: "总资产",
+            nameLocation: "end",
             type: "value",
             min: 3 * 10**5,
             nameTextStyle: {
               fontWeight: "bold",
-              color: "#A02334",
-              verticalAlign: "top",
             },
             axisLine: {
               show: true,
-              lineStyle: {
-                color: "#A02334",
-              },
-            },
-            axisTick: {
-              inside: true,
-              lineStyle: {
-              },
             },
             splitLine: {
               show: false,
@@ -103,19 +92,30 @@
           {
             name: "涨跌幅",
             type: "value",
+            nameLocation: "end",
             min: -10,
             max: 10,
             nameTextStyle: {
               fontWeight: "bold",
-              color: "#A02334",
-              verticalAlign: "top",
+              align: "right",
             },
             axisLine: {
               show: true,
-              lineStyle: {
-                color: "#A02334",
-              },
             },
+          },
+          {
+            name: " / 仓位",
+            nameLocation: "end",
+            type: "value",
+            min: -10,
+            max: 10,
+            nameTextStyle: {
+              fontWeight: "bold",
+              align: "left",
+            },
+            axisLine: { show: false },
+            axisTick: { show: false },
+            axisLabel: { show: false },
           },
         ],
         series: [
@@ -132,8 +132,17 @@
             yAxisIndex: 1,
             itemStyle: {
               color: function(params) {
-                return params.value >= 0 ? 'red' : 'green'; 
+                return params.value >= 0 ? color.red : color.green;
               }
+            }
+          },
+          {
+            name: '仓位',
+            data: data.map(item => (item.stocks.map(stock => stock.capital).reduce((a, b) => a + b, 0) / item.total_assets * 10).toFixed(2)),
+            type: 'bar',
+            yAxisIndex: 2,
+            itemStyle: {
+              color: color.purple,
             }
           },
         ],
@@ -149,9 +158,9 @@
       
       const holdStocksChartOption = {
         title: {
-          text: `${data[dateIndex].date} 持仓分布`,
+          text: `持仓分布（${data[dateIndex].date}）`,
           textStyle: {
-            fontSize: 14,
+            fontSize: 16,
           },
         },
         tooltip: {
@@ -166,7 +175,7 @@
         },
         series: [
           {
-            name: '持仓金额',
+            name: '持仓分布',
             type: 'pie',
             radius: ['30%', '60%'],
             itemStyle: {
@@ -185,7 +194,7 @@
               name: stock.name,
               value: stock.capital,
               itemStyle: {
-                color: stock.profit <= 0 ? '#2ecc71' : '#e74c3c'
+                color: stock.profit <= 0 ? color.green : color.red,
               }
             }))
           }
@@ -194,10 +203,22 @@
       holdStocksChart.setOption(holdStocksChartOption);
     }
 
+    function updateComment(comment) {
+      let html = '';
+      for (let i=0; i<comment?.length; i++) {
+        html += `
+          <p>${comment[i]}</p>
+        `;
+      }
+      eleComment.innerHTML = html;
+    }
+
     makeTotalAssetsChart();
     makeHoldStocksChart(data.length-1);
-    totalAssetsChart.on('mouseover', 'series', function(params) {
+    updateComment(data[data.length-1].comment);
+    totalAssetsChart.on('updateAxisPointer', function(params) {
       makeHoldStocksChart(params.dataIndex);
+      updateComment(data[params.dataIndex].comment);
     });
     window.addEventListener('resize', function() {
       totalAssetsChart.resize();

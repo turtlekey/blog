@@ -1,17 +1,25 @@
 {{ define "main" }}
   <script src="https://unpkg.com/echarts@6.0.0/dist/echarts.min.js"></script>
-  <div id="trade-history-container" data-trade-history='{{ site.Data.stock.trade_history | jsonify }}'>
+  <div id="trade-history-container">
     <div id="total-assets-chart"></div>
     <div id="hold-stocks-chart"></div>
+    <div id="comment">
+    </div>
   </div>
-  <script type="module">
+  <script>
+    const color = {
+      red: '#e74c3c',
+      green: '#2ecc71',
+      purple: '#b48ead',
+    };
     const eleChartContaienr = document.querySelector('#trade-history-container');
     const eleTotalAssetsChart = document.querySelector('#total-assets-chart');
     const eleHoldStocksChart = document.querySelector('#hold-stocks-chart');
+    const eleComment = document.querySelector('#comment');
     let { width, height } = eleChartContaienr.getBoundingClientRect();
     height = height / 2;
     
-    const data = JSON.parse(eleChartContaienr.dataset.tradeHistory);
+    const data = JSON.parse({{ site.Data.stock.trade_history | jsonify }});
     const totalAssetsChart = echarts.init(eleTotalAssetsChart, null, { width, height });
     const holdStocksChart = echarts.init(eleHoldStocksChart, null, { width, height });
 
@@ -20,51 +28,32 @@
         title: {
           text: '资产走势',
           textStyle: {
-            fontSize: 14,
+            fontSize: 16,
           }
         },
         xAxis: {
           name: '日期',
-          nameLocation: "end",
+          nameLocation: "center",
           type: 'category',
           data: data.map(item => item.date),
-          axisTick: {
-            inside: true,
-            lineStyle: {
-              color: "#3FA2F6",
-            },
+          axisLine: {
+            onZero: false,
           },
           nameTextStyle: {
             fontWeight: "bold",
-            color: "#3FA2F6",
-          },
-          axisLine: {
-            onZero: false,
-            lineStyle: {
-              color: "#3FA2F6",
-            },
-          },
+          }
         },
         yAxis: [
           {
             name: "总资产",
+            nameLocation: "end",
             type: "value",
             min: 3 * 10**5,
             nameTextStyle: {
               fontWeight: "bold",
-              color: "#A02334",
-              verticalAlign: "top",
             },
             axisLine: {
               show: true,
-              lineStyle: {
-                color: "#A02334",
-              },
-            },
-            axisTick: {
-              inside: true,
-              lineStyle: {
-              },
             },
             splitLine: {
               show: false,
@@ -73,19 +62,30 @@
           {
             name: "涨跌幅",
             type: "value",
+            nameLocation: "end",
             min: -10,
             max: 10,
             nameTextStyle: {
               fontWeight: "bold",
-              color: "#A02334",
-              verticalAlign: "top",
+              align: "right",
             },
             axisLine: {
               show: true,
-              lineStyle: {
-                color: "#A02334",
-              },
             },
+          },
+          {
+            name: " / 仓位",
+            nameLocation: "end",
+            type: "value",
+            min: -10,
+            max: 10,
+            nameTextStyle: {
+              fontWeight: "bold",
+              align: "left",
+            },
+            axisLine: { show: false },
+            axisTick: { show: false },
+            axisLabel: { show: false },
           },
         ],
         series: [
@@ -102,8 +102,17 @@
             yAxisIndex: 1,
             itemStyle: {
               color: function(params) {
-                return params.value >= 0 ? 'red' : 'green'; 
+                return params.value >= 0 ? color.red : color.green;
               }
+            }
+          },
+          {
+            name: '仓位',
+            data: data.map(item => (item.stocks.map(stock => stock.capital).reduce((a, b) => a + b, 0) / item.total_assets * 10).toFixed(2)),
+            type: 'bar',
+            yAxisIndex: 2,
+            itemStyle: {
+              color: color.purple,
             }
           },
         ],
@@ -119,9 +128,9 @@
       
       const holdStocksChartOption = {
         title: {
-          text: `${data[dateIndex].date} 持仓分布`,
+          text: `持仓分布（${data[dateIndex].date}）`,
           textStyle: {
-            fontSize: 14,
+            fontSize: 16,
           },
         },
         tooltip: {
@@ -136,7 +145,7 @@
         },
         series: [
           {
-            name: '持仓金额',
+            name: '持仓分布',
             type: 'pie',
             radius: ['30%', '60%'],
             itemStyle: {
@@ -155,7 +164,7 @@
               name: stock.name,
               value: stock.capital,
               itemStyle: {
-                color: stock.profit <= 0 ? '#2ecc71' : '#e74c3c'
+                color: stock.profit <= 0 ? color.green : color.red,
               }
             }))
           }
@@ -164,10 +173,22 @@
       holdStocksChart.setOption(holdStocksChartOption);
     }
 
+    function updateComment(comment) {
+      let html = '';
+      for (let i=0; i<comment?.length; i++) {
+        html += `
+          <p>${comment[i]}</p>
+        `;
+      }
+      eleComment.innerHTML = html;
+    }
+
     makeTotalAssetsChart();
     makeHoldStocksChart(data.length-1);
-    totalAssetsChart.on('mouseover', 'series', function(params) {
+    updateComment(data[data.length-1].comment);
+    totalAssetsChart.on('updateAxisPointer', function(params) {
       makeHoldStocksChart(params.dataIndex);
+      updateComment(data[params.dataIndex].comment);
     });
     window.addEventListener('resize', function() {
       totalAssetsChart.resize();
