@@ -348,3 +348,61 @@
     - '2. 存储这边还是可以继续做的，一个预期是跟风夜盘美股次日直接高开，另一个预期是共振大科技的反弹。香农的主升也许结束了，但盘中依然有高确定性的波动，拿一些底仓，然后吃这些波动。'
     - '3. 尾盘加了一手淳中，本轮大科技的绝对情绪趋势龙头，优美的线条让我不得不继续格局。'
     - '4. 竞价小日子概念和平潭发展超预期，于是直接上了福建唯一弹性高标海峡创新。'
+- date: '2025-11-18'
+  total_assets: 295175.09
+  capital: 294819.0
+  available_money: 356.09
+  stocks:
+  - name: 合富中国
+    symbol: '603122'
+    capital: 4760.0
+    profit: 692.77
+    profit_ratio: 17.045
+  - name: 淳中科技
+    symbol: '603516'
+    capital: 20220.0
+    profit: 443.05
+    profit_ratio: 2.242
+  - name: 华盛锂电
+    symbol: '688353'
+    capital: 22600.0
+    profit: -2461.98
+    profit_ratio: -9.829
+  - name: 孚日股份
+    symbol: 002083
+    capital: 2492.0
+    profit: -233.82
+    profit_ratio: -8.582
+  - name: 天际股份
+    symbol: 002759
+    capital: 46695.0
+    profit: -1453.2
+    profit_ratio: -3.02
+  - name: 海峡创新
+    symbol: '300300'
+    capital: 10944.0
+    profit: 1006.54
+    profit_ratio: 10.135
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 16090.0
+    profit: -2284.37
+    profit_ratio: -12.439
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 11420.0
+    profit: -471.15
+    profit_ratio: -3.965
+  - name: 康平科技
+    symbol: '300907'
+    capital: 38148.0
+    profit: -2768.73
+    profit_ratio: -6.77
+  - name: 欢乐家
+    symbol: '300997'
+    capital: 2450.0
+    profit: -511.53
+    profit_ratio: -17.28
+  comment:
+    - '1. 台海三傻一起进苦窑镀金，其实这里就应该对高位持谨慎态度的，但自己还是意淫了手上的核心。'
+    - '2. 每周都有一天是巨亏的，真心难受，跌破30万心理防线了。'

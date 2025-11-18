@@ -22,11 +22,12 @@ def extract_data() -> dict:
         for stock_data in stocks_data:
             stock_data = stock_data.strip().split()
             stock_name = stock_data[1]
-            if "标准券" not in stock_name:
+            capital = float(stock_data[6])
+            if "标准券" not in stock_name and capital > 0:
                 stock = {
                     "name": stock_name,
                     "symbol": stock_data[0],
-                    "capital": float(stock_data[6]),
+                    "capital": capital,
                     "profit": float(stock_data[7]),
                     "profit_ratio": float(stock_data[8]),
                 }
