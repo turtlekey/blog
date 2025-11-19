@@ -406,3 +406,56 @@
   comment:
     - '1. 台海三傻一起进苦窑镀金，其实这里就应该对高位持谨慎态度的，但自己还是意淫了手上的核心。'
     - '2. 每周都有一天是巨亏的，真心难受，跌破30万心理防线了。'
+- date: '2025-11-19'
+  total_assets: 294924.02
+  capital: 294245.0
+  available_money: 679.02
+  stocks:
+  - name: 合富中国
+    symbol: '603122'
+    capital: 4760.0
+    profit: 692.77
+    profit_ratio: 17.045
+  - name: 淳中科技
+    symbol: '603516'
+    capital: 20240.0
+    profit: 463.06
+    profit_ratio: 2.343
+  - name: 华盛锂电
+    symbol: '688353'
+    capital: 22938.0
+    profit: -2124.14
+    profit_ratio: -8.48
+  - name: 孚日股份
+    symbol: 002083
+    capital: 7847.0
+    profit: -460.25
+    profit_ratio: -5.544
+  - name: 天际股份
+    symbol: 002759
+    capital: 38853.0
+    profit: 132.34
+    profit_ratio: 0.342
+  - name: 海峡创新
+    symbol: '300300'
+    capital: 10944.0
+    profit: 1006.54
+    profit_ratio: 10.135
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 16145.0
+    profit: -2229.37
+    profit_ratio: -12.139
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 11188.0
+    profit: -703.02
+    profit_ratio: -5.916
+  - name: 康平科技
+    symbol: '300907'
+    capital: 30330.0
+    profit: -4519.69
+    profit_ratio: -12.976
+  comment:
+    - '1. 在天际股份这里还是比较犹豫，犹豫是正常的，因为这里还是少一点确定性。但是既然在深水加仓了，就不应该拉升一个点就T出，这是很简单的赔率问题，我很笨。'
+    - '2. 全天手机盯盘，除了天际做T，以及尾盘出清弱势票，没有其他操作了。'
