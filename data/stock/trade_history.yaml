@@ -459,3 +459,46 @@
   comment:
     - '1. 在天际股份这里还是比较犹豫，犹豫是正常的，因为这里还是少一点确定性。但是既然在深水加仓了，就不应该拉升一个点就T出，这是很简单的赔率问题，我很笨。'
     - '2. 全天手机盯盘，除了天际做T，以及尾盘出清弱势票，没有其他操作了。'
+- date: '2025-11-20'
+  total_assets: 284960.78
+  capital: 284345.0
+  available_money: 615.78
+  stocks:
+  - name: 大为股份
+    symbol: '002213'
+    capital: 10992.0
+    profit: 520.45
+    profit_ratio: 4.973
+  - name: 天际股份
+    symbol: 002759
+    capital: 42746.0
+    profit: -5548.84
+    profit_ratio: -11.496
+  - name: 海峡创新
+    symbol: '300300'
+    capital: 10944.0
+    profit: 1006.54
+    profit_ratio: 10.135
+  - name: 天华新能
+    symbol: '300390'
+    capital: 6094.0
+    profit: -89.25
+    profit_ratio: -1.444
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 14590.0
+    profit: -4459.63
+    profit_ratio: -23.421
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 10988.0
+    profit: -902.89
+    profit_ratio: -7.597
+  - name: 康平科技
+    symbol: '300907'
+    capital: 26991.0
+    profit: -4848.51
+    profit_ratio: -15.236
+  comment:
+    - '1. 退潮期还是应该出来，尤其不能待在老题材里面。'
+    - '2. 大为能不能穿越出来？'
