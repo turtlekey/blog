@@ -551,3 +551,57 @@
     - '1. 大盘暴涨暴跌都是新股的机会，可惜自己压根没有注意到有这只北交所的新股。记得两年前自己第一次见识到新股无限制涨跌幅的暴利，那时候是蒙固利，那时我告诫自己每天复盘必须留意新股，但是自己还是错过了去年牛市启动时的两只新股，现在又错失一只。归结原因，还是自己太菜了，或者说不够专注，在很多时候都主观地认为没有机会，实际上机会每天都有。'
     - '2. 账户再次破了历史新低，我又开始怀疑自己了。'
     - '3. 30w真的是底线，无奈充值7w，保住底线再说。'
+- date: '2025-11-24'
+  total_assets: 350573.84
+  capital: 349880.0
+  available_money: 693.7
+  stocks:
+  - name: 合富中国
+    symbol: '603122'
+    capital: 2120.0
+    profit: -238.56
+    profit_ratio: -10.12
+  - name: 平潭发展
+    symbol: 000592
+    capital: 969.0
+    profit: -109.83
+    profit_ratio: -10.186
+  - name: 大为股份
+    symbol: '002213'
+    capital: 14840.0
+    profit: -1901.19
+    profit_ratio: -11.362
+  - name: 榕基软件
+    symbol: '002474'
+    capital: 16198.0
+    profit: 821.81
+    profit_ratio: 5.349
+  - name: 天际股份
+    symbol: 002759
+    capital: 19690.0
+    profit: -5191.95
+    profit_ratio: -20.876
+  - name: 清水源
+    symbol: '300437'
+    capital: 1555.0
+    profit: -416.23
+    profit_ratio: -21.125
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 12690.0
+    profit: -6358.45
+    profit_ratio: -33.394
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 13950.0
+    profit: -698.94
+    profit_ratio: -4.774
+  - name: 康平科技
+    symbol: '300907'
+    capital: 21868.0
+    profit: -3777.14
+    profit_ratio: -14.736
+  comment:
+    - '1. 榕基是AI应用实战PK出来的主板龙，一路PK掉了格尔和浪潮，目前是整个AI应用的高度龙。反观两创，标的就有点多了，但节点票也只有两个：腾景和蓝色光标。'
+    - '2. 其他票不动，等轮动的反弹。'
+
