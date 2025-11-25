@@ -605,3 +605,46 @@
     - '1. 榕基是AI应用实战PK出来的主板龙，一路PK掉了格尔和浪潮，目前是整个AI应用的高度龙。反观两创，标的就有点多了，但节点票也只有两个：腾景和蓝色光标。'
     - '2. 其他票不动，等轮动的反弹。'
 
+- date: '2025-11-25'
+  total_assets: 360003.78
+  capital: 359768.0
+  available_money: 235.34
+  stocks:
+  - name: 华盛锂电
+    symbol: '688353'
+    capital: 19834.0
+    profit: 242.34
+    profit_ratio: 1.238
+  - name: 大为股份
+    symbol: '002213'
+    capital: 6074.0
+    profit: -1614.38
+    profit_ratio: -21.008
+  - name: 榕基软件
+    symbol: '002474'
+    capital: 27420.0
+    profit: 5978.72
+    profit_ratio: 27.905
+  - name: 天际股份
+    symbol: 002759
+    capital: 8664.0
+    profit: -3260.48
+    profit_ratio: -27.355
+  - name: 香农芯创
+    symbol: '300475'
+    capital: 26242.0
+    profit: -6140.75
+    profit_ratio: -18.972
+  - name: 英搏尔
+    symbol: '300681'
+    capital: 16680.0
+    profit: -771.84
+    profit_ratio: -4.425
+  - name: 康平科技
+    symbol: '300907'
+    capital: 19854.0
+    profit: -2495.91
+    profit_ratio: -11.173
+  comment:
+    - '1. 榕基竞价跌停我内心是有点窃喜的，这种板块核心在如此低位的深水分歧都是买点，况且现在处于退潮末期，因此在竞价直接加仓。但由于AI应用这个题材是在退潮期启动的，有点逆大盘偷鸡的感觉，个人判断这只是一个小周期，所以加仓很少，而且在+5左右把昨天的底仓全部T出。'
+    - '2. 锂电这边的天际也顺势T了一下，已经产生了减亏走人的想法。'
